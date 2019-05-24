@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MATJARI</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="external/slick/slick.min.css">
+	<link rel="stylesheet" href="external/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/SELLER.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+<!--
+<div id="loader-wrapper">
+	<div id="loader">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	</div>
+</div>
+-->
+
+<header>
+	<div class="mainH">
+		<div class="container fluid">
+			<div class="tt-header-holder">
+				<nav class="navbar w-100">
+					<a class="navbar-brand tt-logo tt-logo-alignment">
+					    <img src="images/custom/logo.png" class="d-inline-block align-top" alt="">
+					    <p class="lead white">
+						    Secure Checkout | For assistance, call 800-38888
+						</p>
+					</a>
+					<button class="tt-btn-addtocart">
+						cart <i class="icon-e-03"></i>
+					</button>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+  <!-- Multi step form --> 
+<section class="multi_step_form">  
+  <form id="msform"> 
+    <!-- Tittle -->
+    <div class="tittle">
+      <h2>Checkout Now</h2>
+      <p>proseed your checkout</p>
+    </div>
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">1
+      </li>
+      <li>2
+      </li>
+      <li>3
+      </li>
+      <li>4
+      </li>
+      <li>5
+      </li>
+      <li>6
+      </li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h3>Shipping Address</h3>
+      <div class="form-row text-left"> 
+	    <div class="map-area mb-3">
+	        <div id="map"></div>
+	    </div>
+      </div>
+      <button type="button" class="next action-button">Save Adress</button> 
+    </fieldset>
+
+    <fieldset>
+      <h3>Your Contact Information</h3>
+		<div class="ProTAble mb-2 text-left">
+			<table class="table">
+				<tbody> 
+						<tr>
+							<td>
+								<span class="topic">
+									first name
+								</span><br>
+								<div class="form-group">  
+									<input type="text" id="" class="form-control" placeholder="first name"> 
+								</div>  
+							</td>
+							<td>
+								<span class="topic">
+									last name
+								</span><br>
+								<div class="form-group">  
+									<input type="text" id="" class="form-control" placeholder="last name"> 
+								</div>  
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="topic">
+									Phone Number
+								</span><br>
+								<div class="form-group">  
+									<input type="phone" id="" class="form-control" placeholder="Phone Number"> 
+								</div>  
+							</td>
+							<td>
+								<span class="topic">
+									Adress
+								</span><br>
+								<div class="form-group"> 
+									<input type="text" class="form-control" placeholder="Adress">
+								</div> 
+							</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+      <button type="button" class="action-button previous previous_button">GO BACK</button>
+      <button type="button" class="next action-button">Save Information</button> 
+    </fieldset> 
+
+    <fieldset>
+      <h3>Adress Confermation</h3>
+		<div class="ProTAble mb-2 text-left">
+			<table class="table">
+				<tbody>
+						<tr>
+							<td>
+								<span class="topic">
+									name
+								</span><br>
+								ahmed
+							</td>
+							<td>
+								<span class="topic">
+									Address
+								</span><br>
+								 St,Dubai, United Arab Emirates
+							</td>
+							<td>
+								<span class="topic">
+									Phone Number
+								</span><br>
+								+971-50-3559652
+							</td>
+						</tr>
+						<tr>
+							<td  colspan="3">
+								<button class="tt-btn">
+									Add New Address
+								</button> 
+							</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+      <button type="button" class="action-button previous previous_button">GO BACK</button>
+      <button type="button" class="next action-button">NEXT</button>
+    </fieldset>
+
+    <fieldset>
+      	<h3>Your Payment Information</h3>
+			<ul class="nav nav-pills p-2  nav-justified" id="pills-tab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="Card-tab" data-toggle="tab" href="#Card" role="tab" aria-controls="Card" aria-selected="true">
+			    	<h4 class="tt-title">
+			    	Card Information
+			    	</h4>
+			    </a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="Delevry-tab" data-toggle="tab" href="#Delevry" role="tab" aria-controls="Delevry" aria-selected="false">
+			    	<h4 class="tt-title">
+					Pay in Delivery
+			    	</h4>
+			    </a>
+			  </li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active" id="Card" role="tabpanel" aria-labelledby="Card-tab">
+					<div class="ProTAble mb-2 text-left">
+						<table class="table">
+							<tbody>
+									<tr>
+										<td colspan="2">
+											<span class="topic">
+												Card Number
+											</span><br>
+											<div class="form-group">  
+												<input type="text" id="" class="form-control" placeholder="- - -  - - -  - - -  - - -"> 
+											</div>  
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="topic">
+												expire date
+											</span><br>
+											<div class="form-group">  
+												<input type="text" id="" class="form-control" placeholder="- -/- -"> 
+											</div>  
+										</td>
+										<td>
+											<span class="topic">
+												CCV
+											</span><br>
+											<div class="form-group"> 
+												<input type="text" class="form-control" placeholder="- - -">
+											</div> 
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			  <div class="tab-pane fade" id="Delevry" role="tabpanel" aria-labelledby="Delevry-tab">
+					<div class="ProTAble mb-2 text-left">
+						<table class="table">
+							<tbody>
+									<tr>
+										<td colspan="">
+											Please note that there is a non refundable fee of AED 10.00 for cash on delivery. To save this amount please pay by card. 
+											<button class="tt-btn">
+												Conferme Order
+											</button>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+      <button type="button" class="action-button previous previous_button">GO BACK</button>
+      <button type="button" class="next action-button">Save Information</button> 
+    </fieldset> 
+
+    <fieldset>
+    	<h3>Phone Confermation Code</h3>
+		<span class="topic">
+			Code
+		</span><br>
+		<div class="form-group"> 
+			<input type="text" class="form-control text-center" placeholder="- - - -">
+		</div>
+	      <button type="button" class="action-button previous previous_button">GO BACK</button>
+	      <button type="button" class="next action-button">Save Information</button> 
+    </fieldset>
+
+    <fieldset>
+      <h3>Your order Information</h3>
+		<div class="ProTAble mb-2 text-left">
+			<table class="table">
+				<tbody>
+						<tr>
+							<td>
+								<span class="topic">
+									name
+								</span><br>
+								ahmed
+							</td>
+							<td>
+								<span class="topic">
+									Address
+								</span><br>
+								 St,Dubai, United Arab Emirates
+							</td>
+							<td>
+								<span class="topic">
+									Phone Number
+								</span><br>
+								+971-50-3559652
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="topic">
+									Card
+								</span><br>
+								*** *** *** ***
+							</td>
+							<td>
+								<span class="topic">
+									order number
+								</span><br>
+								 69531998
+							</td>
+							<td>
+								<span class="topic">
+									Bayment By
+								</span><br>
+								cash in Delevry
+							</td>
+
+						</tr>
+				</tbody>
+			</table>
+		</div>
+      <button type="button" class="action-button previous previous_button">GO BACK</button>
+      <a href="#" class="action-button">ORDER</a>
+    </fieldset> 
+
+  </form>  
+</section> 
+<footer>
+	<div class="tt-color-scheme-01 pt-3 pb-4">
+		<div class="container text-center">
+			<p class="SHOPALERT">
+				Our checkout is safe and secure. Your personal and payment information is securely transmitted via 128-bit encryption. We do not store any payment card information on our systems
+			</p>
+		</div>
+	</div>
+	<div class="tt-footer-custom">
+		<div class="container">
+			<div class="tt-row">
+				<div class="tt-col-left">
+					<div class="tt-col-item">
+						<!-- copyright -->
+						<div class="tt-box-copyright">
+							&copy; Riyad Software 2018. All Rights Reserved
+						</div>
+						<!-- /copyright -->
+
+						<!-- payment-list -->
+						<ul class="tt-payment-list">
+							<li class="mastercard">
+								<a href="">
+								</a>
+					        </li>
+							<li class="visa">
+								<a href="">
+								</a>
+					        </li>
+							<li class="cash">
+								<a href="">
+								</a>
+					        </li>
+							<li class="amex">
+								<a href="">
+								</a>
+					        </li>
+						</ul>
+						<!-- /payment-list -->
+					</div>
+				</div>
+				<div class="tt-col-right">
+						<div class="tt-col-item">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="careers.html">
+										Careers
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="warranty policy.html">
+										Warranty Policy
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="sell with us.html">
+										Sell with us
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="terms of use.html">
+										Terms of Use
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="terms of sale.html">
+										Terms of Sale
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="privacy policy.html">
+										Privacy Policy
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="consumer rights.html">
+										Consumer Rights
+									</a>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="external/jquery/jquery.min.js"></script>
+<script src="external/bootstrap/bootstrap.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script>
+<script src="js/SELLER.js"></script>
+    <!-- Active js -->
+    <script>
+      var map;
+      function initMap() {
+        var cairo = {lat: 30.787512, lng: 31.000268};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          scaleControl: true,
+          center: cairo,
+          zoom: 18
+        });
+
+        var infowindow = new google.maps.InfoWindow;
+        infowindow.setContent('<b>أخبار المؤتمر</b>');
+
+        var marker = new google.maps.Marker({map: map, position: cairo});
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgZWRK7z2sf6DFE0RNmYSTp0iilAm8UaE&callback=initMap"
+    async defer></script>
+</body>
+</html>
